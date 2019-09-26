@@ -1,6 +1,6 @@
 package cn.izhiman.seckill.redis;
 
-import cn.izhiman.seckill.redis.utils.RedisKeyBuilder;
+import cn.izhiman.seckill.redis.keys.RedisKeyBuilder;
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
