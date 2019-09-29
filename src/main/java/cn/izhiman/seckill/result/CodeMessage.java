@@ -3,6 +3,7 @@ package cn.izhiman.seckill.result;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
+import lombok.ToString;
 
 /**
  * 信息码映射
@@ -11,6 +12,7 @@ import lombok.Getter;
  * @date 2019/9/22
  */
 @AllArgsConstructor
+@ToString
 public class CodeMessage {
     @Getter
     private int code;
@@ -35,6 +37,9 @@ public class CodeMessage {
     /**
      * 秒杀模块异常 5004xx
      */
+    public final static CodeMessage GOODS_SOLD_OUT = new CodeMessage(500400, "已售罄（GOODS SOLD OUT）!");
+    public final static CodeMessage REPEAT_SECKILL = new CodeMessage(500401, "不允许重复秒杀!");
+
 
     /**
      * 改为构造者模式
